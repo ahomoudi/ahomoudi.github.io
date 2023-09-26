@@ -1,0 +1,50 @@
+project:
+  type: website
+  resources: 
+    - "*.csv"
+  preview:
+    port: 4200
+    browser: false
+
+website:
+  title: "Ahmed Homoudi"
+  back-to-top-navigation: true
+  twitter-card: true
+  open-graph: true
+  cookie-consent:
+    type: express
+    style: headline
+  google-analytics:
+    tracking-id: "G-50VNEFGLP4"
+    anonymize-ip: true  
+  reader-mode: true 
+  page-footer: 
+    left: "Copyright 2023, Ahmed Homoudi"
+    right: This website is built with {{< fa heart title="a heart" >}} and [Quarto](https://quarto.org/)
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - posts.qmd
+      - students/general-info.qmd
+      - about.qmd
+    right: 
+      - icon: github
+        href: https://github.com/AHomoudi
+        aria-label: GitHub
+      - icon: rss
+        href: index.xml
+        rel: me 
+
+format:
+  html:
+    theme:
+     light: flatly
+     dark: darkly
+    css: styles.css
+    toc: true
+    
+author:
+  - name: Ahmed Homoudi
+    orcid: 0000-0001-6906-5986 
+

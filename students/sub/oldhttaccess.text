@@ -1,0 +1,4 @@
+DirectoryIndex index.html
+<RequireAll>
+    Require ip 141.30
+</RequireAll>

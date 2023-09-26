@@ -1,0 +1,168 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=0cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\title{General Assessment}
+\author{Ahmed Homoudi} %and Klemens Barfus
+\usepackage{setspace}
+\onehalfspacing 
+\usepackage{caption}
+\usepackage{subcaption}
+\begin{document}
+\maketitle
+\noindent 
+
+
+\noindent
+\textbf{Remarks:} 
+\begin{itemize}
+\item Use any programming languages you would like to. Keep in mind that it should be a language capable of handling scientific computations. We, generally, are familiar with R and Python.
+\item The Internet is filled with Q\&A regarding programming, and there is definitely someone who tried to program what you want to do. So, Google is your friend.
+\item Please submit your code and results in a readable manner. 
+\item Comment your code, and leave notes, therefore, you or other people can read it easily later. 
+\end{itemize}
+
+\section{Task 1: String manipulation}
+Write a code that can do these tasks: 
+
+\begin{itemize}
+\item Print "Hello World!". 
+\item Check out your working directory (WD) and Print it.
+\item Make a new directory from within your code. 
+\item Change your WD to the newly created directory. 
+\item Create a TXT file in the WD, and Write in it: \\
+               "Hello world!"\\
+               "I'm your name"
+\item Read that text file and replace "World" with "Dresden" or any other word, and finally write it to the TXT file. 
+    
+\item Advanced task: If you want to challenge yourself, this is the chance: 
+    \begin{itemize}
+    \item Create a vector of string that has a length of 50 elements. Each element is, for example, "Hello! I'm file number n". n is the order of the string in the vector. 
+    \item Loop over the vector elements, and write each element to a TXT file called "file\_n.txt"
+    \item List all these TXT files and read their content to one variable, and write this variable to a TXT file called "all\_n.txt"
+    \item Delete the other 50 files. 
+    \end{itemize}
+\end{itemize}
+
+\section{Task 2: One Dimensional Data}
+Go to \href{https://climateknowledgeportal.worldbank.org/download-data}{Climate Change Knowledge Portal}. Download a time series data of precipitation and mean temperature for your country or area of interest. After downloading the data as shown in Figure \ref{fig001}, continue in the same code you started in Task 1 and write a script that: 
+
+\begin{figure}[H]
+         
+    \centering
+    \includegraphics[width=\textwidth]{Screenshot from 2022-08-05 10-27-08.png}
+    \caption{Climate Change Knowledge Portal. CRU (Observed)}
+    \label{fig001}
+    
+
+\end{figure}
+
+\begin{itemize}
+\item Read the two CSV file you downloaded correctly. 
+\item Plot a time series of the two variables.
+\item Produce a long-term climatology from the data. Look at the first left plot \href{https://en.climate-data.org/europe/bulgaria/german/german-198333/}{here}. %If you would like a challenge, include both datasets in the same graph. 
+    
+\item Advanced task: If you want to challenge yourself, this is another chance: 
+    \begin{itemize}
+    \item calculate the yearly accumulated rainfall and plot it as bar-plot where x-axis is years. 
+    \item add a trend line with slope value on the chart. 
+    \end{itemize}
+\end{itemize}
+
+\section{Task 3: Two Dimensional Data}
+
+Go to \href{https://cloudstore.zih.tu-dresden.de/index.php/s/Bks4sAZbPD46SZ7}{CloudStore, TU Dresden} and download the file \textit{task3\_file.nc}. The file contains 2D data (excluding time dimension) from ERA5 reanalysis including 2 m temperature, total precipitation, u and v wind compounds. After downloading the file, continue in the same code you started in tasks above and write a script that: 
+
+\begin{itemize}
+\item Read the netCDF file.
+\item Extract different variables from the file. 
+\item Determine the spatial resolution of data in longitude and latitude directions. 
+\item search for the grid cell that represents your region of interest, and extract the variables as monthly time series. 
+\item Plot 2 m temperature, total precipitation in one time series plot (Hint: two different y-axis).
+\item Plot the u and v wind components as well as wind speed. 
+    
+\item Advance task: If you want to challenge yourself, this is another chance: 
+    \begin{itemize}
+    \item Aggregate the variables on the time axis and produce a long term climatology. 
+    \item Plot a map focused on your region showing long-term climatology of 2 m temperature, total precipitation, and wind. (Hint: the data has dimension of (time=264, lat=180, lon=360), a worldwide climatology should have (time=1, lat=180, lon=360)).
+    \item Try to add map legends, shape files indicating the borders and every features that is part of map standards.
+    \item You could plot wind speed and directions as arrows.  
+    \end{itemize}
+\end{itemize}
+
+
+
+\section{Task 4: Three Dimensional Data (Advanced)}
+Go to \href{https://cloudstore.zih.tu-dresden.de/index.php/s/Bks4sAZbPD46SZ7}{CloudStore, TU Dresden} and download the file \textit{task4\_file.nc}. The file contains 3D data (excluding time dimension) from ERA5 reanalysis including temperature, relative humidity, geopotential (See more about it \href{https://apps.ecmwf.int/codes/grib/param-db/?id=129}{here}), and u and v wind compounds. After downloading the file, continue in the same code you started in tasks above and write a script that: 
+
+\begin{itemize}
+\item Read the netCDF file.
+\item Extract different variables from the file. 
+\item Determine the spatial resolution of data in longitude and latitude directions. 
+\item Search for the grid cell that represents your region of interest, and extract the variables as monthly time series. 
+    (Hint: the file contains atmospheric data on variable levels for one year. So the monthly time series should a table for the location you picked containing 3 columns: month, level, value)
+\item Plot atmospheric profiles for different variable, where x-axis is the climatic variable, y-axis is pressure level or/and altitude. Start with plotting one month. Check \href{https://en.wikipedia.org/wiki/U.S._Standard_Atmosphere}{the first figure on the right there}. 
+\item Plot similar profile the u and v wind components as well as wind speed. 
+    
+\item Advanced task: If you want to challenge yourself, this is  another chance: 
+    \begin{itemize}
+    \item In the plots above, add a profile line for each month for each variable. 
+    \end{itemize}
+\end{itemize}
+
+
+\vspace{5mm}
+\begin{center}
+    \textbf{End}
+\end{center}
+
+\newpage
+\section{Internal: New supervision approach}
+After the student show an interest in the topic, they will receive the 'General assessment test'. They will have 1 to 2 weeks to solve the task above. Afterwards, they should submit their code, their actual grades until now, and a detailed CV. 
+
+\begin{itemize}
+\item No matrix chat, email only. It should be one thread; including all supervisors.  
+\item A short, consistent email about the progress and issues weekly.
+\item Meetings will be held triweekly. Preferably, on Friday. In case of urgent issues, a meeting can be organised in the following week.
+\item Meetings require the presence of all supervisors. 
+\item Emails during the weekend are unlikely to be answered.
+\end{itemize}
+
+%\section{General Information}
+
+%\section{Data Knoweldge} 
+%\begin{enumerate}
+%\item If you have being supplied with a CSV file including daily temperature data for your home town. Can you elaborate what you expect in this file? 
+%\end{enumerate}
+
+%\section{Climatological Knowledge} 
+%\textbf{Attention:} In this section, the applicant is asked to present their knowledge about climate and weather process. It will not affect the general assessment score. 
+%Please try to answer the questions here without external help. There is no issue in googling the terms or using a dictionary. 
+%timeseries 
+%maps 
+%2d time series 
+%3D time series 
+%Radisende 
+%clouds 
+%general circulation 
+%temperature, humidity, wind 
+%lat and lon 
+%describe the climate at your hometown considering temperature and 
+%\begin{Form}
+%\TextField{Last Name:} \\
+%\TextField{First Name:} \\
+%\TextField{Date:} \\
+%\TextField{Course of Study:} \\
+%\end{Form}
+\end{document}

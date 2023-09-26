@@ -1,0 +1,34 @@
+---
+title: "Welcome!"
+project:
+  preview:
+    port: 4200
+    host: 127.0.0.1
+    browser: true
+    watch-inputs: true
+    navigate: true
+---
+
+Welcome to my website! Here, you can find information on my research projects, publications, and talks. Additionally, I share my thoughts on various topics in my [blog](posts.qmd). For students interested in working with me on theses or study projects, please refer to the information provided in [this link](students/general-info.qmd).
+
+## NEWS
+
+
+
+## Timeline
+
+
+
+```{r, echo=FALSE}
+
+library(cronologia)
+library(readr)
+timeline <- read_csv("resources/timeline.csv",
+                     show_col_types = FALSE)
+create_tml(df = timeline,
+           smr = "smr",
+           dsc = "dsc",
+           smr_col = "smr_col",
+           smr_bgcol = "smr_bgcol",
+           open = TRUE)
+```

@@ -1,0 +1,30 @@
+---
+title: "About"
+author:
+  - name: Ahmed Homoudi
+    orcid: 0000-0001-6906-5986
+---
+
+
+
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+
+## Education
+
+University of California, San Diego | San Diego, CA
+PhD in Mathematics | Sept 2011 - June 2015
+
+Macalester College | St. Paul MA
+B.A in Economics | Sept 2007 - June 2011
+
+## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Spet 2012 - April 2018
+
+:::
+
+## About this site
+
+"Rainy Algorithms" is a metaphorical term that combines "rainy" from your description of valuing rain and "algorithms" from the coding and optimization aspects mentioned in your blog's content. It symbolizes the idea of combining meteorology (rain-related topics) with coding and optimization (algorithm-related topics). Just as rain can bring transformation and change, "Rainy Algorithms" suggests a fusion of elements that can bring about meaningful insights and transformations in atmospheric science through coding and optimization techniques.

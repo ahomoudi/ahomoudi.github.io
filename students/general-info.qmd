@@ -1,0 +1,32 @@
+---
+title: "Students"
+author:
+  - name: Ahmed Homoudi
+    orcid: 0000-0001-6906-5986
+---
+
+<!--
+## Introduction
+
+## Process of choosing a topic
+
+### Study Projects
+
+### Bachelor thesis
+
+ <> Please tell us something about your motivation. Why do you want to do your thesis in environmental remote sensing? What do you want to learn? What are your plans?
+
+### Master thesis
+
+# application + proposal
+
+Question to answer: Suggested start and end of thesis: Attended classes/modules or external workshops in remote sensing
+
+Which remote sensing application would you like to address? Which analysis techniques and methods would you like to use? Which topic do you prefer? Which analysis techniques and methods would you like to use? \[ \] Statistics (general) \[ \] Image analysis (general) \[ \] Time series analysis \[ \] Machine learning \[ \] Deep learning \[ \] Retrieval/inversion methods \[ \] Model-data integration \[ \] Other:
+
+Please rate your technical skills.
+
+We will write the official task definition, and you can register for your Master's thesis at your examination office.
+
+# Supervision
+-->
