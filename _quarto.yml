@@ -25,10 +25,11 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - posts.qmd
       - students/general-info.qmd
+      - rpackages.qmd
       - about.qmd
     right: 
+      - posts.qmd
       - icon: github
         href: https://github.com/AHomoudi
         aria-label: GitHub
