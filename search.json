@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018\n:::"
+  },
+  {
+    "objectID": "about.html#about-this-site",
+    "href": "about.html#about-this-site",
+    "title": "About",
+    "section": "About this site",
+    "text": "About this site\n“Rainy Algorithms” is a metaphorical term that combines “rainy” from your description of valuing rain and “algorithms” from the coding and optimization aspects mentioned in your blog’s content. It symbolizes the idea of combining meteorology (rain-related topics) with coding and optimization (algorithm-related topics). Just as rain can bring transformation and change, “Rainy Algorithms” suggests a fusion of elements that can bring about meaningful insights and transformations in atmospheric science through coding and optimization techniques."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nAhmed Homoudi\n\n\n11 August 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nAhmed Homoudi\n\n\n08 August 2023\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "students/general-info.html",
+    "href": "students/general-info.html",
+    "title": "Students",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "students/sub/general-assessment.html",
+    "href": "students/sub/general-assessment.html",
+    "title": "General Assessment",
+    "section": "",
+    "text": "Remarks:\n\nUse any programming languages you would like to. Keep in mind that it should be a language capable of handling scientific computations. We, generally, are familiar with R and Python.\nThe Internet is filled with Q&A regarding programming, and there is definitely someone who tried to program what you want to do. So, Google is your friend.\nPlease submit your code and results in a readable manner.\nComment your code, and leave notes, therefore, you or other people can read it easily later.\n\n\nTask 1: String manipulation\nWrite a code that can do these tasks:\n\nPrint \"Hello World!\".\nCheck out your working directory (WD) and Print it.\nMake a new directory from within your code.\nChange your WD to the newly created directory.\nCreate a TXT file in the WD, and Write in it:\n\"Hello world!\"\n\"I’m your name\"\nRead that text file and replace \"World\" with \"Dresden\" or any other word, and finally write it to the TXT file.\nAdvanced task: If you want to challenge yourself, this is the chance:\n\nCreate a vector of string that has a length of 50 elements. Each element is, for example, \"Hello! I’m file number n\". n is the order of the string in the vector.\nLoop over the vector elements, and write each element to a TXT file called \"file_n.txt\"\nList all these TXT files and read their content to one variable, and write this variable to a TXT file called \"all_n.txt\"\nDelete the other 50 files.\n\n\n\n\nTask 2: One Dimensional Data\nGo to Climate Change Knowledge Portal. Download a time series data of precipitation and mean temperature for your country or area of interest. After downloading the data as shown in Figure 1, continue in the same code you started in Task 1 and write a script that:\n\n\n\nClimate Change Knowledge Portal. CRU (Observed)\n\n\n\nRead the two CSV file you downloaded correctly.\nPlot a time series of the two variables.\nProduce a long-term climatology from the data. Look at the first left plot here.\nAdvanced task: If you want to challenge yourself, this is another chance:\n\ncalculate the yearly accumulated rainfall and plot it as bar-plot where x-axis is years.\nadd a trend line with slope value on the chart.\n\n\n\n\nTask 3: Two Dimensional Data\nGo to CloudStore, TU Dresden and download the file task3_file.nc. The file contains 2D data (excluding time dimension) from ERA5 reanalysis including 2 m temperature, total precipitation, u and v wind compounds. After downloading the file, continue in the same code you started in tasks above and write a script that:\n\nRead the netCDF file.\nExtract different variables from the file.\nDetermine the spatial resolution of data in longitude and latitude directions.\nsearch for the grid cell that represents your region of interest, and extract the variables as monthly time series.\nPlot 2 m temperature, total precipitation in one time series plot (Hint: two different y-axis).\nPlot the u and v wind components as well as wind speed.\nAdvance task: If you want to challenge yourself, this is another chance:\n\nAggregate the variables on the time axis and produce a long term climatology.\nPlot a map focused on your region showing long-term climatology of 2 m temperature, total precipitation, and wind. (Hint: the data has dimension of (time=264, lat=180, lon=360), a worldwide climatology should have (time=1, lat=180, lon=360)).\nTry to add map legends, shape files indicating the borders and every features that is part of map standards.\nYou could plot wind speed and directions as arrows.\n\n\n\n\nTask 4: Three Dimensional Data (Advanced)\nGo to CloudStore, TU Dresden and download the file task4_file.nc. The file contains 3D data (excluding time dimension) from ERA5 reanalysis including temperature, relative humidity, geopotential (See more about it here), and u and v wind compounds. After downloading the file, continue in the same code you started in tasks above and write a script that:\n\nRead the netCDF file.\nExtract different variables from the file.\nDetermine the spatial resolution of data in longitude and latitude directions.\nSearch for the grid cell that represents your region of interest, and extract the variables as monthly time series. (Hint: the file contains atmospheric data on variable levels for one year. So the monthly time series should a table for the location you picked containing 3 columns: month, level, value)\nPlot atmospheric profiles for different variable, where x-axis is the climatic variable, y-axis is pressure level or/and altitude. Start with plotting one month. Check the first figure on the right there.\nPlot similar profile the u and v wind components as well as wind speed.\nAdvanced task: If you want to challenge yourself, this is another chance:\n\nIn the plots above, add a profile line for each month for each variable.\n\n\n\nEnd\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "students/sub/research-topics.html",
+    "href": "students/sub/research-topics.html",
+    "title": "Research Topics",
+    "section": "",
+    "text": "I wish to express complete transparency in our collaboration expectations. The acquisition of programming skills is imperative for us to work together effectively. Our endeavors encompass the management of extensive datasets and intricate simulations. Programming serves as a fundamental tool for achieving automation and optimizing efficiency within these contexts. To facilitate a successful partnership, I kindly request your commitment to acquiring programming proficiency. This will not only enhance our productivity but also contribute to the overall success of our collaboration. Your understanding and consideration in this matter are greatly appreciated.\n\nAnalysis of CAPE and CIN from radiosondes for Germany\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de 2 ahmed.homoudi@tu-dresden.de\nVertical profiles of the atmosphere are measured using Radiosondes/ weather balloons. These measurements provide some insights if thunderstorms might happen by indices like CAPE and CIN. The project aims to fullfil the following objectives: - Relevant literature review. - Estimation of CAPE, CIN, & other atmospheric stability indices. - Systematic analysis and presentation of the results.\n\n\nAnalysis of drop size distributions from the Tharandt distrometer with respect to rain erosion on wind turbines\nAnalysis of Vertical Profiles from WRF Simulations Application of the Hewson front detection algorithm to the Arabian Peninsula Assessing Future Changes of Climate Extreme Events in Sudan using CORDEX Ensemble Climatology of the Moisture Sources in the Arabian Peninsula using Lagrangian Method Establishment of Z-R relationships for the Arabian Peninsula Identification of Tropical cyclones in the Arabian Sea Sub-Basin Nearly raining clouds over the AP from CloudSat data Objective Identification and Characterisation of ITCZs in Arid and Semiarid Regions Rendering of mesoscale model outputs with focus on clouds and precipitation\n\n\nAnalysis of Vertical Profiles from WRF Simulations\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de\n2 ahmed.homoudi@tu-dresden.de\n\n\nAnalysis of CAPE and CIN from radiosondes for Germany\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de\n2 ahmed.homoudi@tu-dresden.de\n\n\nAnalysis of drop size distributions from the Tharandt distrometer with respect to rain erosion on wind turbines\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de\n2 ahmed.homoudi@tu-dresden.de\n\n\nApplication of the Hewson front detection algorithm to the Arabian Peninsula\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de\n2 ahmed.homoudi@tu-dresden.de\n\n\nNearly raining clouds over the AP from CloudSat data\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de\n2 ahmed.homoudi@tu-dresden.de\n\n\nRendering of mesoscale model outputs with focus on clouds and precipitation\nSupervisors: K. Barfus1 & A. Homoudi2 (Chair of Meteorology)\n1 klemens.barfus@tu-dresden.de\n2 ahmed.homoudi@tu-dresden.de\n\n\nIdentification of Tropical cyclones in the Arabian Sea Sub-Basin\nSupervisors: A. Homoudi1 & K. Barfus2 (Chair of Meteorology)\n1 ahmed.homoudi@tu-dresden.de\n2 klemens.barfus@tu-dresden.de\nBackground:\nTropical cyclones (Tcs) are one of the most devastating events and are expected to intensify under global warming. TCs are one of the most difficult events to predict and understand in the atmosphere. Storm surges associated with severe TCs are the most damaging rather than rain and strong winds. Under a warming climate, the frequency of the TCs in the Arabian Sea is increasing. Additionally, the TCs are projected to intensify, with a greater proportion of storms having more damaging wind speeds, higher storm surges, and more extreme rainfall rates. Besides the fact that TCs are spatially shifted in Climate models, the detection criteria vary tremendously between climate models and remote sensing data. Therefore, the characteristics of TCs should be understood through direct, objective and automatic detection and tracking methods in reanalyses and model simulations to contribute to developing integrated planning for Climate Change.\nObjectives:\n\nDetecting tropical cyclones genesis from Remote sensing data (e.g., IR images)\nIdentification of tropical cyclones in ERA5 reanalysis data.\nComparison of the findings with observation data (i.e. IBTrACS)\nSystematic presentation of findings\n\nSkills (not compulsory but preferred or strong motivation to learn):\n\nProgramming with R or Python\nFamiliarity with Linux and shell scripting\nAcquaintance with climate data formats (e.g., NetCDF)\n\n\n\nClimatology of the Moisture Sources in the Arabian Peninsula using Lagrangian Method\nSupervisors: A. Homoudi1 & K. Barfus2 (Chair of Meteorology)\n1 ahmed.homoudi@tu-dresden.de\n2 klemens.barfus@tu-dresden.de\nBackground:\nThe Arabian Peninsula is one of the aridest regions on earth, and it is a region of reciprocal influences of tropical and extra-tropical configurations. Several configurations govern the climate of the region (e.g., Mediterranean, monsoon, subtropical, tropical, and Saharan influences). It is important to understand the configuration contributing to precipitation events in such an arid region. One essential ingredient for precipitation events is the available moisture, which can, e.g. be transported in organised bands known as atmospheric rivers. These different means of moisture transport are responsible for some of the global hydro-climatic extremes. In the Arabian Peninsula, they are responsible for the record floods during March 2019. On the other hand, these extreme precipitation events might be the only source of groundwater recharge.\nObjectives:\n\nLiterature review: Sources of moisture, precipitation systems, Lagrangian analysis.\nCalculating forward/backward trajectories to infer water vapour transport to the Arabian Peninsula.\nIdentifying trajectories and moisture contributions leading to precipitation events on the Arabian Peninsula.\nObtaining water vapour sources and pathways by Lagranto model using ERA5 reanalysis.\nSystematic presentation of findings with comprehensive interpretation of the results.\n\nSkills (not compulsory but preferred or strong motivation to learn):\n\n\nAssessing Future Changes of Climate Extreme Events in Sudan using CORDEX Ensemble\nSupervisors: A. Homoudi1 & K. Barfus2 (Chair of Meteorology)\n1 ahmed.homoudi@tu-dresden.de\n2 klemens.barfus@tu-dresden.de\nBackground:\nObjectives:\nSkills (not compulsory but preferred or strong motivation to learn):\n\n\nObjective Identification and Characterisation of ITCZs in Arid and Semiarid Regions\nSupervisors: A. Homoudi1 & K. Barfus2 (Chair of Meteorology)\n1 ahmed.homoudi@tu-dresden.de\n2 klemens.barfus@tu-dresden.de\nBackground:\nObjectives:\nSkills (not compulsory but preferred or strong motivation to learn):\n\n\nEstablishment of Z-R relationships for the Arabian Peninsula\nSupervisors: A. Homoudi1 & K. Barfus2 (Chair of Meteorology)\n1 ahmed.homoudi@tu-dresden.de\n2 klemens.barfus@tu-dresden.de\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "rpackages.html",
+    "href": "rpackages.html",
+    "title": "R Packages",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Welcome to my website! Here, you can find information on my research projects, publications, and talks. Additionally, I share my thoughts on various topics in my blog. For students interested in working with me on theses or study projects, please refer to the information provided in this link."
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Welcome!",
+    "section": "NEWS",
+    "text": "NEWS"
+  },
+  {
+    "objectID": "index.html#timeline",
+    "href": "index.html#timeline",
+    "title": "Welcome!",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n\n\nFirst  Website’s draft\n15 March 2023"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\n Back to top"
+  }
+]
